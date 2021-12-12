@@ -1,9 +1,10 @@
 # cod2unity
 Call of Duty map loader plugin for Unity. 
-Goal was to practice in reverse engineering, file formats and peripheral Unity systems.
+Goal was practice in reverse engineering, file formats and peripheral Unity systems.
 
-Unity [FPS Sample](https://unity.com/fps-sample)! on [Toujane](https://callofduty.fandom.com/wiki/Toujane)!:
-https://user-images.githubusercontent.com/20693893/145733428-780d01e3-6166-4679-9e3f-c58fb4cb9488.mp4
+Unity [FPS Sample](https://unity.com/fps-sample) on [Toujane](https://callofduty.fandom.com/wiki/Toujane):
+
+https://user-images.githubusercontent.com/20693893/145734473-21b43146-bec1-47ed-b21b-5c34ed6d5ce1.mp4
 
 # Current status
 This Unity plugin can currently load D3DBSP and IWI files. It's only being tested on Call of Duty 2.
