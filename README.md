@@ -1,5 +1,5 @@
 # cod2unity
-Call of Duty map loader plugin for Unity. 
+Call of Duty map loader plugin for Unity.
 Goal was practice in reverse engineering, file formats and peripheral Unity systems.
 
 Unity [FPS Sample](https://unity.com/fps-sample) on [Toujane](https://callofduty.fandom.com/wiki/Toujane):
@@ -22,3 +22,5 @@ Currently this plugin can:
 - Open up the Setup Window from the Unity's top menu: Cod2Unity > Setup
 - Locate your Call of Duty 2 game folder, wait for the plugin to parse game files
 - Import any scene from the list to your scene
+
+![Screenshot_1](https://user-images.githubusercontent.com/20693893/145734790-954200df-1b65-460b-b299-b225efae5318.png)
