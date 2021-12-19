@@ -262,7 +262,7 @@ namespace Cod2Unity
             if (ident != "IBSP4")
                 return;
 
-            FillLumpList();
+            FillLumpList(mapName);
         }
 
         string GetHeaderIdentifier()
@@ -281,7 +281,7 @@ namespace Cod2Unity
             return ident.ToString();
         }
 
-        private void FillLumpList()
+        private void FillLumpList(string mapName)
         {
             br.BaseStream.Seek(8, SeekOrigin.Begin);
 
@@ -309,7 +309,7 @@ namespace Cod2Unity
                 //Debug.Log("Lump[" + l.name + "] Length: " + l.length + " bytes | Offset: " + l.offset + " bytes");
             }
 
-            CreateMeshMagic();
+            CreateMeshMagic(mapName);
         }
 
         private void FillMaterialList()
@@ -398,7 +398,7 @@ namespace Cod2Unity
             }
         }
 
-        void CreateMeshMagic()
+        void CreateMeshMagic(string mapName)
         {
 
             FillSoupsList();
@@ -421,7 +421,7 @@ namespace Cod2Unity
             // First you look up the current triangle
             // Then you use the index pointed to by the triangle, plus the vertex_offset, to find the correct vertex
 
-            GameObject root = new GameObject("root_");
+            GameObject root = new GameObject(System.IO.Path.GetFileNameWithoutExtension(mapName));
             for (int i = 0; i < this.triangleSoups.Count; i++)
             {
                 TriangleSoup currentSoup = this.triangleSoups[i];
